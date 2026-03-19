@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Colección de Arte Exclusiva</title>
+    <meta name="description" content="Promoción de obras de arte exclusivas para coleccionistas de alto nivel.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts: Playfair Display & Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content">AURA</div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">AURA</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="concierge.html">Curador IA</a></li>
+            <li><a href="#contacto" class="cta-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="video-container">
+                <!-- Premium Vimeo Background Video -->
+                <iframe src="https://player.vimeo.com/video/433946255?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1" frameborder="0" allow="autoplay; fullscreen" class="hero-video-iframe"></iframe>
+                <div class="video-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <h1 class="reveal-text">El Arte de lo <br><span>Inalcanzable</span></h1>
+                <p class="reveal-text-sub">Curaduría exclusiva para el coleccionismo más exigente.</p>
+                <div class="hero-cta reveal-text-sub">
+                    <a href="artistas.html" class="btn-primary">Explorar Galería</a>
+                </div>
+            </div>
+            <div class="scroll-indicator reveal-text-sub">
+                <div class="mouse"></div>
+                <!-- Removed text to avoid overlap and maintain minimalism -->
+            </div>
+        </section>
+
+        <section class="about-aura">
+            <div class="container about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">Nuestra Filosofía</h2>
+                    <p>En AURA, no vendemos arte. Curamos experiencias estéticas que trascienden el tiempo y el espacio. Cada pieza en nuestra colección privada ha sido seleccionada con un rigor absoluto, destinada únicamente a aquellos que entienden el verdadero valor de lo excepcional.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">AURA</div>
+            <p>&copy; 2026 AURA Art Promotion. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Bespoke Consultation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: var(--color-white); overflow: hidden;">
+
+    <nav class="navbar theme-light">
+        <div class="nav-content text-tracked">
+            <ul class="nav-links">
+                <li><a href="index.html">Colección</a></li>
+                <li><a href="coleccion.html">Obras</a></li>
+            </ul>
+            <div class="logo">AURA</div>
+            <ul class="nav-links">
+                <li><a href="bespoke.html" class="active">Bespoke (IA)</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="bespoke-experience">
+        <div class="bespoke-header fade-up">
+            <h1>AURA Bespoke</h1>
+            <p class="text-tracked" style="color: var(--color-grey-mid);">TU CURADOR PRIVADO</p>
+        </div>
+
+        <section class="chat-interface">
+            <div class="chat-history" id="chat-window">
+                <div class="bespoke-msg system fade-up">
+                    <p>Bienvenido. En AURA, cada adquisición es audaz e irrepetible. ¿Qué visión o material deseas incorporar a tu legado hoy?</p>
+                </div>
+            </div>
+
+            <div class="chat-input-wrapper fade-up" style="animation-delay: 0.5s;">
+                <input type="text" id="user-input" placeholder="Comienza a definir tu obra..." autocomplete="off">
+                <button id="send-btn" class="text-tracked">Enviar <span class="btn-icon"></span></button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

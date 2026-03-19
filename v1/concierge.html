@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Concierge IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body class="page-concierge overflow-hidden">
+    <div class="loader">
+        <div class="loader-content">AURA</div>
+    </div>
+
+    <nav class="navbar navbar-transparent">
+        <div class="logo">AURA</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="artistas.html">Artistas</a></li>
+            <li><a href="concierge.html" class="active">Curador IA</a></li>
+            <li><a href="#contacto" class="cta-link">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background for Concierge -->
+    <div class="concierge-bg"></div>
+
+    <main class="concierge-main">
+        <div class="ai-container full-screen-ai">
+            <div class="ai-header">
+                <h3 class="reveal-text">Concierge Virtual AURA</h3>
+                <p class="reveal-text-sub">Atención exclusiva para el coleccionista distinguido.</p>
+            </div>
+            
+            <div id="chat-window" class="chat-window">
+                <div class="message system">Bienvenido a su sesión privada. Soy el curador en jefe virtual de AURA. ¿Qué concepto o material resuena con su visión actual?</div>
+            </div>
+            
+            <div class="chat-input-area">
+                <input type="text" id="user-input" placeholder="Escriba sus requerimientos o inquietudes de arte..." autocomplete="off">
+                <button id="send-btn">Enviar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Obras de Arte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-light" style="background-color: var(--color-white);">
+
+    <nav class="navbar theme-light" id="navbar">
+        <div class="nav-content text-tracked">
+            <ul class="nav-links">
+                <li><a href="index.html">Colección</a></li>
+                <li><a href="coleccion.html" class="active">Obras</a></li>
+            </ul>
+            <div class="logo">AURA</div>
+            <ul class="nav-links">
+                <li><a href="bespoke.html">Bespoke (IA)</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Gallery Header -->
+        <section class="hero-full" style="height: 60vh;">
+            <img src="https://images.pexels.com/photos/1572944/pexels-photo-1572944.jpeg?auto=compress&cs=tinysrgb&w=2560&h=1440&dpr=2" alt="Museum" class="hero-media">
+            <div class="hero-overlay light-overlay"></div>
+            
+            <div class="hero-content" style="text-align: center; max-width: 100%; margin: 0 auto;">
+                <h1 class="title-massive fade-up" style="color: var(--color-black);">Galería Inédita.</h1>
+                <p class="text-tracked fade-up" style="color: var(--color-grey-mid);">Una selección rigurosa para museos y privados.</p>
+            </div>
+        </section>
+
+        <!-- Staggered Collection -->
+        <section class="collection-grid">
+            
+            <article class="collection-item">
+                <div class="collection-img-wrap fade-up">
+                    <img src="https://images.pexels.com/photos/2086361/pexels-photo-2086361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Vórtice">
+                </div>
+                <div class="collection-info fade-up">
+                    <p class="text-tracked">Julian Voss</p>
+                    <h3>Vórtice Abstracto</h3>
+                    <p class="text-body">Una exploración visceral del movimiento. Óleo y texturas minerales sobre lienzo belga de gran formato. Una presencia innegable que domina la habitación.</p>
+                    <a href="bespoke.html" class="btn-primary dark text-tracked">
+                        Adquirir <span class="btn-icon"></span>
+                    </a>
+                </div>
+            </article>
+
+            <article class="collection-item">
+                <div class="collection-img-wrap fade-up">
+                    <img src="https://images.pexels.com/photos/3313175/pexels-photo-3313175.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sculpture">
+                </div>
+                <div class="collection-info fade-up">
+                    <p class="text-tracked">Elena Rossi</p>
+                    <h3>Contorsión Blanca</h3>
+                    <p class="text-body">El dominio absoluto sobre el mármol. Rossi dobla la piedra como si tratara de tela, creando una silueta etérea que cambia drásticamente desde cada ángulo de observación.</p>
+                    <a href="bespoke.html" class="btn-primary dark text-tracked">
+                        Adquirir <span class="btn-icon"></span>
+                    </a>
+                </div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer class="footer-minimal theme-light">
+        <div class="logo" style="position: relative; margin-bottom: 2rem;">AURA</div>
+        <p class="text-tracked" style="color: var(--color-grey-mid);">&copy; 2026 AURA ART. GOODWOOD / LONDRES.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
