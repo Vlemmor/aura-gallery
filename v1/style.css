@@ -15,6 +15,8 @@
 
 html {
     scroll-behavior: auto; /* Managed by GSAP/SmoothScroll if needed */
+    overflow-x: hidden;
+    width: 100%;
 }
 
 body {
@@ -23,6 +25,8 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 h1, h2, h3, .logo {
@@ -123,8 +127,8 @@ h1, h2, h3, .logo {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: -2;
@@ -133,12 +137,14 @@ h1, h2, h3, .logo {
 /* Optional: if video aspect ratio leaves black bars, scale it up */
 @media (min-aspect-ratio: 16/9) {
     .hero-video-iframe {
-        height: 56.25vw; /* 100 * 9 / 16 */
+        height: 56.25vh; /* 100 * 9 / 16 */
+        width: 100vw;
     }
 }
 @media (max-aspect-ratio: 16/9) {
     .hero-video-iframe {
         width: 177.78vh; /* 100 * 16 / 9 */
+        height: 100vh;
     }
 }
 
